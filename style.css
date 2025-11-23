@@ -559,7 +559,7 @@ footer {
 .hero-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;   /* au minimum la hauteur de l’écran */
+  /*min-height: 100vh;   /* au minimum la hauteur de l’écran */
   overflow: hidden;
   padding-top: 5rem;   /* pousse le contenu vers le haut */
   padding-bottom: 3rem;
