@@ -555,31 +555,36 @@ footer {
 
 /* ===== Arrière-plans sections (hero, services, équipe) ===== */
 
-/* Section d'accueil avec image de fond */
+/* SECTION ACCUEIL AVEC VIDÉO */
 .hero-section {
   position: relative;
-  padding: 3rem 0 3rem;
+  width: 100%;
+  height: 100vh; /* hauteur plein écran */
   overflow: hidden;
 }
 
-.hero-section::before {
-  content: "";
+/* vidéo d'arrière-plan */
+.hero-video {
   position: absolute;
-  inset: 0;
-  background-image: url("bg-hero.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.28;              /* transparence pour garder le texte lisible */
-  filter: saturate(1.1) contrast(1.05);
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
   z-index: 0;
+  filter: brightness(0.45) saturate(1.1); /* vidéo assombrie */
 }
 
-/* léger dégradé sombre pour bien lire les textes */
-.hero-section::after {
-  content: "";
+/* voile sombre pour lisibilité du texte */
+.hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at top, rgba(15,23,42,0.2), rgba(2,6,23,0.9));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.6)
+  );
   z-index: 0;
 }
 
