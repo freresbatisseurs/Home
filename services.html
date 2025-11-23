@@ -1,41 +1,101 @@
-    <!-- SERVICES -->
-    <section id="services">
-      <div class="container">
-        <div class="section-title">
-          <h2>Nos services</h2>
-          <p>Des solutions complètes pour vos bâtiments, vos équipements électriques et vos projets solaires.</p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services – L.F.B – Les Frères Bâtisseurs</title>
+  <link rel="icon" type="image/jpeg" href="logo-lfb.jpeg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- EN-TÊTE -->
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="logo-lfb.jpeg" alt="Logo L.F.B – Les Frères Bâtisseurs" class="logo-img" />
+          <span>L.F.B – Les Frères Bâtisseurs</span>
         </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="equipe.html">Notre équipe</a></li>
+            <li><a href="avis.html">Avis</a></li>
+            <li><a href="contact.html" class="btn-nav">Contact / Devis</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-        <div class="services-grid">
-          <article class="service-card">
-            <div class="service-icon">🏗️</div>
-            <h3>Construction de bâtiments</h3>
-            <p>
-              Construction de maisons, immeubles, boutiques, bureaux et locaux professionnels, avec une attention
-              particulière portée à la solidité, à la sécurité et à la finition des travaux.
-            </p>
-            <span class="service-tag">Bâtiments & structures</span>
-          </article>
+  <!-- CONTENU SERVICES -->
+  <main>
+    <section class="container">
+      <div class="section-title">
+        <h1>Nos services</h1>
+        <p>Des solutions complètes pour vos bâtiments, vos installations électriques et vos projets solaires.</p>
+      </div>
 
-          <article class="service-card">
-            <div class="service-icon">💡</div>
-            <h3>Travaux électriques & maintenance</h3>
-            <p>
-              Installation et rénovation des réseaux électriques, mise en sécurité des installations, dépannage et
-              maintenance des équipements électriques pour particuliers et entreprises.
-            </p>
-            <span class="service-tag">Électricité & sécurité</span>
-          </article>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3>Construction de bâtiments</h3>
+          <p>
+            Construction de maisons, immeubles, boutiques, bureaux et locaux professionnels, avec une attention
+            particulière portée à la solidité, à la sécurité et à la finition des travaux.
+          </p>
+          <span class="service-tag">Bâtiments & structures</span>
+        </article>
 
-          <article class="service-card">
-            <div class="service-icon">☀️</div>
-            <h3>Installation de panneaux photovoltaïques</h3>
-            <p>
-              Étude, fourniture et installation de panneaux solaires pour réduire vos factures, sécuriser votre
-              alimentation électrique et favoriser les énergies renouvelables.
-            </p>
-            <span class="service-tag">Énergie solaire</span>
-          </article>
-        </div>
+        <article class="service-card">
+          <div class="service-icon">💡</div>
+          <h3>Travaux électriques & maintenance</h3>
+          <p>
+            Installation, rénovation et mise en sécurité des réseaux électriques. Maintenance et dépannage
+            des équipements pour particuliers, entreprises et organisations.
+          </p>
+          <span class="service-tag">Électricité & sécurité</span>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">☀️</div>
+          <h3>Installation de panneaux photovoltaïques</h3>
+          <p>
+            Étude, fourniture et installation de panneaux solaires pour réduire vos factures, sécuriser
+            votre alimentation électrique et favoriser les énergies renouvelables.
+          </p>
+          <span class="service-tag">Énergie solaire</span>
+        </article>
       </div>
     </section>
+  </main>
+
+  <!-- PIED DE PAGE -->
+  <footer>
+    <div class="container footer-row">
+      <span>© <span id="year"></span> L.F.B – Les Frères Bâtisseurs – Tous droits réservés.</span>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="mentions.html">Mentions légales</a>
+        <a href="politique.html">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP -->
+  <div class="whatsapp-float">
+    <div class="whatsapp-tooltip">Contact WhatsApp</div>
+    <a href="https://wa.me/VOTRE_NUMERO_WHATSAPP?text=Bonjour%20L.F.B%20!%20Je%20souhaite%20un%20devis."
+       target="_blank" aria-label="Nous contacter sur WhatsApp">
+      🟢
+    </a>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
