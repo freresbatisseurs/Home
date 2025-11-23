@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réalisations – L.F.B – Les Frères Bâtisseurs</title>
+  <link rel="icon" type="image/jpeg" href="logo-lfb.jpeg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="logo-lfb.jpeg" alt="Logo L.F.B – Les Frères Bâtisseurs" class="logo-img" />
+          <span>L.F.B – Les Frères Bâtisseurs</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="equipe.html">Notre équipe</a></li>
+            <li><a href="avis.html">Avis</a></li>
+            <li><a href="contact.html" class="btn-nav">Contact / Devis</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="section-title">
+        <h1>Nos réalisations</h1>
+        <p>Quelques exemples des types de projets que nous pouvons réaliser pour vous.</p>
+      </div>
+
+      <div class="realisations-grid">
+        <div class="real-card">
+          <div class="real-thumb"></div>
+          <div class="real-title">Maison individuelle avec installation électrique complète</div>
+          <div class="real-city">Brazzaville</div>
+          <div>
+            Construction du bâtiment, pose des réseaux électriques intérieurs et mise en sécurité de l’installation.
+          </div>
+        </div>
+        <div class="real-card">
+          <div class="real-thumb"></div>
+          <div class="real-title">Locaux commerciaux rénovés</div>
+          <div class="real-city">Pointe-Noire</div>
+          <div>
+            Rénovation intérieure, renforcement des installations électriques et adaptation aux besoins des commerces.
+          </div>
+        </div>
+        <div class="real-card">
+          <div class="real-thumb"></div>
+          <div class="real-title">Installation de panneaux solaires</div>
+          <div class="real-city">Ville du Congo</div>
+          <div>
+            Pose de panneaux photovoltaïques pour sécuriser l’alimentation électrique et réduire les coûts d’énergie.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© <span id="year"></span> L.F.B – Les Frères Bâtisseurs – Tous droits réservés.</span>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="mentions.html">Mentions légales</a>
+        <a href="politique.html">Politique de confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-float">
+    <div class="whatsapp-tooltip">Contact WhatsApp</div>
+    <a href="https://wa.me/VOTRE_NUMERO_WHATSAPP?text=Bonjour%20L.F.B%20!%20Je%20souhaite%20un%20devis."
+       target="_blank" aria-label="Nous contacter sur WhatsApp">
+      🟢
+    </a>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
