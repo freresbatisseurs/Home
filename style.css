@@ -552,3 +552,74 @@ footer {
     display: none;
   }
 }
+
+/* ===== Arrière-plans sections (hero, services, équipe) ===== */
+
+/* Section d'accueil avec image de fond */
+.hero-section {
+  position: relative;
+  padding: 3rem 0 3rem;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("bg-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.28;              /* transparence pour garder le texte lisible */
+  filter: saturate(1.1) contrast(1.05);
+  z-index: 0;
+}
+
+/* léger dégradé sombre pour bien lire les textes */
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, rgba(15,23,42,0.2), rgba(2,6,23,0.9));
+  z-index: 0;
+}
+
+/* contenu de la section hero au-dessus de l'image */
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Sections avec image de fond plus discrète (services, équipe) */
+.section-bg {
+  position: relative;
+  padding: 3rem 0 3rem;
+  overflow: hidden;
+}
+
+.section-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.18;
+  filter: blur(1px) saturate(1.05);
+  z-index: 0;
+}
+
+/* contenu au-dessus de l'image */
+.section-bg .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* image spécifique pour la page Services */
+.services-bg::before {
+  background-image: url("bg-services.jpg");
+}
+
+/* image spécifique pour la page Équipe */
+.equipe-bg::before {
+  background-image: url("bg-equipe.jpg");
+}
+
