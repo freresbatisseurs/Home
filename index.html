@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- EN-TÊTE COMMUN -->
   <header>
     <div class="container">
       <div class="navbar">
@@ -30,25 +31,27 @@
     </div>
   </header>
 
+  <!-- CONTENU ACCUEIL -->
   <main>
-    <div class="container hero-layout">
+    <section class="container hero-layout">
       <div class="hero-text">
         <h1>Nous construisons, alimentons et sécurisons vos bâtiments.</h1>
         <p>
           L.F.B – Les Frères Bâtisseurs accompagne les particuliers et les entreprises dans plusieurs villes du Congo
           pour leurs projets de construction de bâtiments, de travaux électriques et d’installations de panneaux
-          photovoltaïques.
+          photovoltaïques, avec des solutions fiables, durables et adaptées à chaque besoin.
         </p>
         <div class="hero-actions">
           <button class="btn-primary" onclick="window.location.href='contact.html'">
             Demander un devis gratuit
           </button>
           <button class="btn-outline" onclick="window.location.href='realisations.html'">
-            Voir nos réalisations
+            Voir toutes nos réalisations
           </button>
         </div>
         <p style="font-size:0.9rem; color:#9ca3af;">
-          Basés à Brazzaville, nous intervenons dans plusieurs villes du Congo, avec des solutions fiables et durables.
+          Basés à Brazzaville, nous intervenons dans plusieurs villes du Congo pour des projets neufs, des rénovations
+          et des installations solaires.
         </p>
       </div>
 
@@ -60,9 +63,45 @@
           <li>Installation de panneaux photovoltaïques pour réduire les factures d’énergie.</li>
         </ul>
       </div>
-    </div>
+    </section>
+
+    <!-- APERÇU RÉALISATIONS SUR LA PAGE D’ACCUEIL -->
+    <section class="container" style="margin-top:2.5rem;">
+      <div class="section-title">
+        <h2>Quelques réalisations</h2>
+        <p>Un aperçu de projets que nous pouvons réaliser pour vous.</p>
+      </div>
+
+      <div class="realisations-grid">
+        <div class="real-card">
+          <div class="real-thumb"></div>
+          <div class="real-title">Maison individuelle avec installation électrique complète</div>
+          <div class="real-city">Brazzaville</div>
+          <div>
+            Construction du bâtiment, pose des réseaux électriques intérieurs et mise en sécurité de l’installation.
+          </div>
+        </div>
+        <div class="real-card">
+          <div class="real-thumb"></div>
+          <div class="real-title">Locaux commerciaux rénovés</div>
+          <div class="real-city">Pointe-Noire</div>
+          <div>
+            Rénovation intérieure, renforcement des installations électriques et adaptation aux besoins des commerces.
+          </div>
+        </div>
+        <div class="real-card">
+          <div class="real-thumb"></div>
+          <div class="real-title">Installation de panneaux solaires</div>
+          <div class="real-city">Ville du Congo</div>
+          <div>
+            Pose de panneaux photovoltaïques pour sécuriser l’alimentation électrique et réduire les coûts d’énergie.
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- PIED DE PAGE COMMUN -->
   <footer>
     <div class="container footer-row">
       <span>© <span id="year"></span> L.F.B – Les Frères Bâtisseurs – Tous droits réservés.</span>
@@ -74,6 +113,7 @@
     </div>
   </footer>
 
+  <!-- WHATSAPP FLOTTANT COMMUN -->
   <div class="whatsapp-float">
     <div class="whatsapp-tooltip">Contact WhatsApp</div>
     <a href="https://wa.me/VOTRE_NUMERO_WHATSAPP?text=Bonjour%20L.F.B%20!%20Je%20souhaite%20un%20devis."
